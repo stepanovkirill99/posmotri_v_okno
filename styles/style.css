@@ -4,10 +4,12 @@
   box-sizing: border-box;
 }
 
-:active, :hover, :focus {
+/* :active,
+:hover,
+:focus {
   outline: 0;
   outline-offset: 0;
-}
+} */
 
 html {
   block-size: 100%;
@@ -113,9 +115,24 @@ ol {
   background-color: transparent;
 }
 
+
 .search-form__textfield:active {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
+}
+
+input:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__label:has(.search-form__pseudo-checkbox):hover {
+  text-decoration: underline;
 }
 
 .search-form__pseudo-checkbox{
@@ -125,6 +142,7 @@ ol {
   width: 18px;
   height: 18px;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -183,6 +201,8 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -208,8 +228,25 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
   color: #fff;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+  text-underline-position: under; 
+}
+
+.content__video-card:active {
+  background-color: #545050;
+  width: 399px;
+  height: 103px;
+}
+
+.content__video-link:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px; ;
 }
 
 .button {
@@ -233,4 +270,17 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
   height: 34px;
   align-self: end;
   justify-self: end;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.button:active {
+  background-color: #545050;
 }
