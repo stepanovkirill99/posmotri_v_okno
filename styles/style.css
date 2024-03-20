@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-/* :active,
-:hover,
-:focus {
-  outline: 0;
-  outline-offset: 0;
-} */
-
 html {
   block-size: 100%;
 }
@@ -114,7 +107,6 @@ ol {
   appearance: none;
   background-color: transparent;
 }
-
 
 .search-form__textfield:active {
   border-right: 1px solid #fff;
