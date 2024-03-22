@@ -55,7 +55,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 120px 29px 134px 31px;
+  padding: 120px 30px 134px;
   gap: 30px;
 }
 
@@ -193,10 +193,8 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 } 
 
 .content__video-card-description-container {
-  width: 100%;
-  white-space: nowrap;
+  width: 200px;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .content__video-card-title {
@@ -206,6 +204,8 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
   line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -237,6 +237,10 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
   margin: 3px;
   text-decoration: none;
   color: #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link:hover {
