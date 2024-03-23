@@ -189,21 +189,20 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list-item:not(:last-of-type) {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 } 
 
 .content__video-card-description-container {
-  width: 200px;
-  overflow: hidden;
+  width: 184px;
 }
 
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  line-height: 123%;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
