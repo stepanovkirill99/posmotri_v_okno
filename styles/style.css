@@ -197,10 +197,11 @@ input[type=checkbox]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-title {
+  margin-top: -3px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 123%;
+  line-height: 136%;
   text-transform: uppercase;
   overflow: hidden;
   white-space: nowrap;
